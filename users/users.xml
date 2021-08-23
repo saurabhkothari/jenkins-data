@@ -14,5 +14,9 @@
       <string>noreply</string>
       <string>noreply_4558617411977684116</string>
     </entry>
+    <entry>
+      <string>cisco</string>
+      <string>cisco_1762603229315562107</string>
+    </entry>
   </idToDirectoryNameMap>
 </hudson.model.UserIdMapper>
