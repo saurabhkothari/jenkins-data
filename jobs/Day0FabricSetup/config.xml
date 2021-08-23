@@ -1,0 +1,141 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.41">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.8.5"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.8.5">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.92">
+    <script>pipeline {
+    agent {  label &apos;aci-ansible&apos;    }
+
+    stages {
+        stage(&apos;Git &apos;){
+            steps{
+            git branch: &apos;main&apos;, url: &apos;https://github.com/saurabhkothari/Cisco-ACI.git&apos;
+            }
+        }
+        stage(&apos;Bootstrap APIC User&apos;){
+          
+            steps {
+             withCredentials([file(credentialsId: &apos;ansible-user-key&apos;, variable: &apos;key&apos;)]){
+               ansiColor(&apos;xterm&apos;) {
+                
+                            ansiblePlaybook(
+                             playbook: &apos;user-creation-day0.yml&apos; ,
+                             inventory: &apos;inventory&apos;,
+                             vaultCredentialsId: &apos;ansible-vault-id&apos;,
+                             colorized: true)
+                    
+               
+                            } 
+                        }
+                    }
+                }
+            
+        stage(&apos;Discover Fabric Switches&apos;){
+          
+            steps {
+             script {
+                for (int i = 1; i &lt;= 3; ++i) {
+
+                    withCredentials([file(credentialsId: &apos;ansible-user-key&apos;, variable: &apos;key&apos;)]){
+                    ansiColor(&apos;xterm&apos;) {
+                        
+                                    ansiblePlaybook(
+                                    playbook: &apos;fab-discovery.yml&apos; ,
+                                    inventory: &apos;inventory&apos;,
+                                    vaultCredentialsId: &apos;ansible-vault-id&apos;,
+                                    extraVars: [
+                                        private_key: &quot;${key}&quot;,
+                                        ],
+                                    colorized: true)
+                                        }
+                    
+                                    } 
+                                }
+                            }
+                        }
+                    }   
+
+        stage(&apos;Configure Fabric Policies&apos;){
+          
+            steps {
+             withCredentials([file(credentialsId: &apos;ansible-user-key&apos;, variable: &apos;key&apos;)]){
+               ansiColor(&apos;xterm&apos;) {
+                
+                            ansiblePlaybook(
+                             playbook: &apos;fabric.yml&apos; ,
+                             inventory: &apos;inventory&apos;,
+                             vaultCredentialsId: &apos;ansible-vault-id&apos;,
+                             extraVars: [
+                                 private_key: &quot;${key}&quot;,
+                                 ],
+                             colorized: true)
+                    
+               
+                            } 
+                        }
+                    }
+                }
+        stage(&apos;Configure Access Policies&apos;){
+          
+            steps {
+             withCredentials([file(credentialsId: &apos;ansible-user-key&apos;, variable: &apos;key&apos;)]){
+               ansiColor(&apos;xterm&apos;) {
+                
+                            ansiblePlaybook(
+                             playbook: &apos;access.yml&apos;,
+                             inventory: &apos;inventory&apos;,
+                             vaultCredentialsId: &apos;ansible-vault-id&apos;,
+                             extraVars: [
+                                 private_key: &quot;${key}&quot;,
+                                 ],
+                             colorized: true)
+                    
+               
+                            } 
+                        }
+                    }
+                }          
+    }
+    post { 
+        success { 
+            wrap([$class: &apos;BuildUser&apos;]) {
+            sh &quot;&quot;&quot;
+                    curl --location --request POST &apos;https://webexapis.com/v1/messages&apos; \
+--header &apos;Authorization: Bearer MmFhMzM0MjAtMjdmZi00MWE3LWFiZmItN2Q1ODAxNzllNjU3ZmE5ZmFlNGQtYWI2_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f&apos; \
+--header &apos;Content-Type: application/json&apos; \
+--data-raw &apos;{
+  &quot;roomId&quot;: &quot;Y2lzY29zcGFyazovL3VzL1JPT00vYWRhOWQ0ODAtZTYwNy0xMWViLTk3YWYtOTkwNTEzNzMzMjBl&quot;,
+  
+  &quot;markdown&quot;: &quot;Started at: ${BUILD_TIMESTAMP}\\nAuthor:${env.BUILD_USER}(${env.BUILD_USER_EMAIL})\\nBuild ID: ${BUILD_NUMBER}\\nBuild_URL: ${JOB_URL}\\nResult: ${currentBuild.currentResult}&quot; 
+}&apos;
+         &quot;&quot;&quot;
+        }}
+        failure { 
+            sh &quot;&quot;&quot;
+                    curl --location --request POST &apos;https://webexapis.com/v1/messages&apos; \
+--header &apos;Authorization: Bearer MmFhMzM0MjAtMjdmZi00MWE3LWFiZmItN2Q1ODAxNzllNjU3ZmE5ZmFlNGQtYWI2_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f&apos; \
+--header &apos;Content-Type: application/json&apos; \
+--data-raw &apos;{
+  &quot;roomId&quot;: &quot;Y2lzY29zcGFyazovL3VzL1JPT00vYWRhOWQ0ODAtZTYwNy0xMWViLTk3YWYtOTkwNTEzNzMzMjBl&quot;,
+  
+  &quot;markdown&quot;: &quot;Started at: ${BUILD_TIMESTAMP}\\nAuthor:${env.BUILD_USER}(${env.BUILD_USER_EMAIL})\\nBuild ID: ${BUILD_NUMBER}\\nBuild_URL: ${JOB_URL}\\nResult: ${currentBuild.currentResult}&quot; 
+}&apos;
+         &quot;&quot;&quot;
+        }
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

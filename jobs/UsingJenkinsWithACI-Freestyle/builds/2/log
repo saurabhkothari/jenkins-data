@@ -1,0 +1,25 @@
+Started by user [8mha:////4M8JSj1TgKPS7rzprdEx7hyM1qiMDXsEw/CMxdW+bzuLAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL94sTSosSkDACNCwf+wgAAAA==[0mSaurabh Kothari
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ACI-Freestyle
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/ACI-Freestyle/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/saurabhkothari/Cisco-ACI-Shell.git # timeout=10
+Fetching upstream changes from https://github.com/saurabhkothari/Cisco-ACI-Shell.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git fetch --tags --force --progress -- https://github.com/saurabhkothari/Cisco-ACI-Shell.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision e57cb2b672dc336b880dfd5e91cf000c9e4b6c2d (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e57cb2b672dc336b880dfd5e91cf000c9e4b6c2d # timeout=10
+Commit message: "Create remove_cookie.sh"
+ > git rev-list --no-walk e57cb2b672dc336b880dfd5e91cf000c9e4b6c2d # timeout=10
+[ACI-Freestyle] $ /bin/sh -xe /tmp/jenkins72645939704614292.sh
++ sh common.sh
+
+### logging in ###
+common.sh: 12: common.sh: Bad substitution
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

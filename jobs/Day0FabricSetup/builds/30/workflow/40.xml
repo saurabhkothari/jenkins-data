@@ -1,0 +1,49 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.92">
+    <parentIds>
+      <string>39</string>
+    </parentIds>
+    <id>40</id>
+    <descriptorId>org.jenkinsci.plugins.ansible.workflow.AnsiblePlaybookStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.92">
+      <arguments>
+        <entry>
+          <string>extraVars</string>
+          <linked-hash-map>
+            <entry>
+              <string>private_key</string>
+              <string>${key}</string>
+            </entry>
+          </linked-hash-map>
+        </entry>
+        <entry>
+          <string>inventory</string>
+          <string>inventory</string>
+        </entry>
+        <entry>
+          <string>vaultCredentialsId</string>
+          <string>ansible-vault-id</string>
+        </entry>
+        <entry>
+          <string>playbook</string>
+          <string>fab-discovery.yml</string>
+        </entry>
+        <entry>
+          <string>colorized</string>
+          <boolean>true</boolean>
+        </entry>
+      </arguments>
+      <sensitiveVariables>
+        <string>key</string>
+      </sensitiveVariables>
+      <isUnmodifiedBySanitization>false</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.46">
+      <startTime>1627477493215</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

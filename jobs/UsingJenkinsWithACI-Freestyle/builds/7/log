@@ -1,0 +1,54 @@
+Started by user [8mha:////4M8JSj1TgKPS7rzprdEx7hyM1qiMDXsEw/CMxdW+bzuLAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL94sTSosSkDACNCwf+wgAAAA==[0mSaurabh Kothari
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/UsingJenkinsWithACI-Freestyle
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/saurabhkothari/Cisco-ACI-Shell.git
+ > git init /var/jenkins_home/workspace/UsingJenkinsWithACI-Freestyle # timeout=10
+Fetching upstream changes from https://github.com/saurabhkothari/Cisco-ACI-Shell.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git fetch --tags --force --progress -- https://github.com/saurabhkothari/Cisco-ACI-Shell.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/saurabhkothari/Cisco-ACI-Shell.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 89928169a392547dd55c14a2f826aeb4d7951eb5 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 89928169a392547dd55c14a2f826aeb4d7951eb5 # timeout=10
+Commit message: "Update create_tenant.sh"
+ > git rev-list --no-walk e57cb2b672dc336b880dfd5e91cf000c9e4b6c2d # timeout=10
+[UsingJenkinsWithACI-Freestyle] $ /bin/sh -xe /tmp/jenkins7392918471977841736.sh
++ bash common.sh
+
+### logging in ###
+Login OK
+ ### Printing list of all Tenants ###
+
+infra
+mgmt
+common
+
+ ### adding tenant ###
+{"totalCount":"0","imdata":[]}
+ ### Printing list of all Tenants ###
+
+infra
+mgmt
+common
+TEST1234
+
+ ### Deleting Tenant ###
+
+{"totalCount":"0","imdata":[]}
+ ### Printing list of all Tenants ###
+
+infra
+mgmt
+common
+
+### removing cookie.txt ### 
+
+Finished: SUCCESS

@@ -1,0 +1,151 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.41">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>saurabh</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.21">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@1.8.5">
+      <stagesUUID>cde7a3f7-b32b-4a8b-8e44-14eaea575ae1</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@1.8.5">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Notify</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">def build = currentBuild // global variable in pipeline -&gt; https://opensource.triology.de/jenkins/pipeline-syntax/globals#currentBuild
+
+            def targetUrl = &quot;https://botworkflows.webex.com/embed/run/99602d21d2917a0b7b4a23&quot;
+            def buildUrl = build.absoluteUrl
+            def buildNumber = build.number
+            def buildStatus = build.currentResult
+
+            httpRequest url: targetUrl, contentType: &apos;APPLICATION_JSON&apos;, httpMode: &apos;POST&apos;, responseHandle: &apos;NONE&apos;, timeout: 30, requestBody: &quot;&quot;&quot;
+            {
+                &quot;name&quot;: &quot;${args.serviceName}&quot;,
+                &quot;build&quot;: {
+                    &quot;full_url&quot;: &quot;${buildUrl}&quot;,
+                    &quot;number&quot;: &quot;${buildNumber}&quot;,
+                    &quot;phase&quot;: &quot;FINISHED&quot;,
+                    &quot;status&quot;: &quot;${buildStatus}&quot;
+                }
+            }
+            &quot;&quot;&quot;</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>cde7a3f7-b32b-4a8b-8e44-14eaea575ae1</uuid>
+          </stages>
+          <agent>
+            <agentType>
+              <key>any</key>
+            </agentType>
+          </agent>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.92">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+  </actions>
+  <queueId>173</queueId>
+  <timestamp>1626361600445</timestamp>
+  <startTime>1626361600447</startTime>
+  <result>FAILURE</result>
+  <duration>1446</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>pipeline {
+agent any
+stages {
+    stage(&apos;Notify&apos;) {
+     steps {
+
+        script { 
+            def build = currentBuild // global variable in pipeline -&gt; https://opensource.triology.de/jenkins/pipeline-syntax/globals#currentBuild
+
+            def targetUrl = &quot;https://botworkflows.webex.com/embed/run/99602d21d2917a0b7b4a23&quot;
+            def buildUrl = build.absoluteUrl
+            def buildNumber = build.number
+            def buildStatus = build.currentResult
+
+            httpRequest url: targetUrl, contentType: &apos;APPLICATION_JSON&apos;, httpMode: &apos;POST&apos;, responseHandle: &apos;NONE&apos;, timeout: 30, requestBody: &quot;&quot;&quot;
+            {
+                &quot;name&quot;: &quot;${args.serviceName}&quot;,
+                &quot;build&quot;: {
+                    &quot;full_url&quot;: &quot;${buildUrl}&quot;,
+                    &quot;number&quot;: &quot;${buildNumber}&quot;,
+                    &quot;phase&quot;: &quot;FINISHED&quot;,
+                    &quot;status&quot;: &quot;${buildStatus}&quot;
+                }
+            }
+            &quot;&quot;&quot;
+        }
+     }
+}
+}
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>22065167</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>2173140971</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1312068180</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>126661704</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>41822460</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>15</iota>
+    <head>1:15</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

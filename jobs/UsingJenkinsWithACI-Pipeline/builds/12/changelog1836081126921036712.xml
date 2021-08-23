@@ -1,0 +1,18 @@
+commit 89928169a392547dd55c14a2f826aeb4d7951eb5
+tree c5cce6d6dba6fa29f2b76df0362b55d8af825e00
+parent 7ac93a4c2e47515d6785fc5b2a155273cb98e453
+author saurabhkothari <saurabhkothari@rocketmail.com> 2021-07-27 23:17:29 +0530
+committer GitHub <noreply@github.com> 2021-07-27 23:17:29 +0530
+
+    Update create_tenant.sh
+
+:100644 100644 21958a31af6663a5826516327227d5d1ad9e8627 8333fcf9910983e753754818f590c0105cebaeb6 M	create_tenant.sh
+commit 7ac93a4c2e47515d6785fc5b2a155273cb98e453
+tree 82e9e1d596dc496833cdff9cebab13e109b24d24
+parent 4e042bae5395b757091390935f074485e22b2cfe
+author saurabhkothari <saurabhkothari@rocketmail.com> 2021-07-27 23:17:17 +0530
+committer GitHub <noreply@github.com> 2021-07-27 23:17:17 +0530
+
+    Update delete_tenant.sh
+
+:100644 100644 0d3bef44e493eda765765ad688acaff80e2690df 069bc2486e4a1b776c345c1d0ad1057234a99ca3 M	delete_tenant.sh

@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2021-07-05 14:12:46.819 UTC</timestamp>
+  <md5sum>4ddab670876282a3e49ad1ea3d613af6</md5sum>
+  <fileName>Credential id=ansible-user-key name=ansible.key</fileName>
+  <usages>
+    <entry>
+      <string>TenantOnboardingWithNAE</string>
+      <ranges>20-29</ranges>
+    </entry>
+    <entry>
+      <string>Day0FabricSetup</string>
+      <ranges>30-33</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

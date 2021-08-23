@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: hagzag
+Build-Jdk: 14.0.1
+Extension-Name: notification
+Specification-Title: Sends notifications about jobs phases and status
+Implementation-Title: notification
+Implementation-Version: 1.14
+Group-Id: com.tikalk.hudson.plugins
+Short-Name: notification
+Long-Name: Jenkins Notification plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Notification+Plugin
+Minimum-Java-Version: 1.8
+Plugin-Version: 1.14
+Hudson-Version: 2.235.1
+Jenkins-Version: 2.235.1
+Plugin-Dependencies: credentials:2.3.14,junit:1.46;resolution:=optiona
+ l,plain-credentials:1.7,s3:0.11.5;resolution:=optional,token-macro:2.
+ 12;resolution:=optional
+Plugin-Developers: Mark Berner:markb:markb@tikalk.com,Haggai Philip Za
+ gury:hagzag:hagzag@tikalk.com,Evgeny Goldin:evgenyg:evgenyg@gmail.com
+ ,Chen Cohen:cohencil:chenc@tikalk.com
+Plugin-License-Name: The Apache Software License, Version 2.0
+Plugin-License-Url: http://www.apache.org/licenses/LICENSE-2.0.txt
+Plugin-ScmUrl: https://github.com/jenkinsci/notification-plugin
+

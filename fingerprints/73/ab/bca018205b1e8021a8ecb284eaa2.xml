@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2021-07-22 13:36:25.195 UTC</timestamp>
+  <md5sum>73abbca018205b1e8021a8ecb284eaa2</md5sum>
+  <fileName>Credential id=webex-key name=webex-key</fileName>
+  <usages>
+    <entry>
+      <string>TenantOnboardingWithNAE</string>
+      <ranges>20-29</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

@@ -1,0 +1,112 @@
+commit f0c957e634527d9af759c2d2dbad009dd23ecd4a
+tree 48815784bbd2dc369d2c11e0bacc2c0c5fd2973a
+parent 8329578ea8c9b99bf4c47beff9af6b664c63acd6
+author saurabhkothari <saukotha@cisco.com> 2021-07-22 21:03:48 +0530
+committer saurabhkothari <saukotha@cisco.com> 2021-07-22 21:03:48 +0530
+
+    update
+
+
+:100644 100644 1e228f0da76cf975ce7c9e7877ce93fd8dbcf247 930dc18b258938de786ecdb102570e21120009f4 M	tenant.yml
+commit 8329578ea8c9b99bf4c47beff9af6b664c63acd6
+tree 7ab71ecce483bf811e710a96eab830a061c2dd47
+parent 4ffd9cda7f086c23387b90c06a34c09ba275b0fc
+author saurabhkothari <saukotha@cisco.com> 2021-07-22 20:35:23 +0530
+committer saurabhkothari <saukotha@cisco.com> 2021-07-22 20:35:23 +0530
+
+    pcv update
+
+
+:100644 100644 318814df329e3224991720b1d20d6c058de6caec 10f2ecbc7eadfc90d4dec3d871e67ab77ea7f65d M	pcv.yaml
+:100644 100644 930dc18b258938de786ecdb102570e21120009f4 1e228f0da76cf975ce7c9e7877ce93fd8dbcf247 M	tenant.yml
+commit 4ffd9cda7f086c23387b90c06a34c09ba275b0fc
+tree 6ff38540edf2fc7d7360ad71d9aaf16722794257
+parent 3255658fbd16e535c4eff69bd7a37aeec58ce203
+author saurabhkothari <saukotha@cisco.com> 2021-07-22 20:29:36 +0530
+committer saurabhkothari <saukotha@cisco.com> 2021-07-22 20:29:36 +0530
+
+    added bd
+
+
+:100644 100644 7f2be96126b37f736e3424914a1a07e88edff940 930dc18b258938de786ecdb102570e21120009f4 M	tenant.yml
+commit 3255658fbd16e535c4eff69bd7a37aeec58ce203
+tree 25f121c4bd4be722922b7eac1341eeda2f28a3b9
+parent 9228c4eced84f2d47b065afd5f4a2f07ee51ea1a
+author saurabhkothari <saukotha@cisco.com> 2021-07-22 20:21:47 +0530
+committer saurabhkothari <saukotha@cisco.com> 2021-07-22 20:21:47 +0530
+
+    changed bd
+
+
+:100644 100644 88249521cbf39e2c091496f5075575e1c6a77a45 7f2be96126b37f736e3424914a1a07e88edff940 M	tenant.yml
+commit 9228c4eced84f2d47b065afd5f4a2f07ee51ea1a
+tree 24c80896ba2793795923493baf9c39838bd08960
+parent 46b383ba6b3e9ec44e0a89d7f4cb778d41282b46
+author saurabhkothari <saukotha@cisco.com> 2021-07-22 19:44:44 +0530
+committer saurabhkothari <saukotha@cisco.com> 2021-07-22 19:44:44 +0530
+
+    new BD
+
+
+:100644 100644 7f2be96126b37f736e3424914a1a07e88edff940 88249521cbf39e2c091496f5075575e1c6a77a45 M	tenant.yml
+commit 46b383ba6b3e9ec44e0a89d7f4cb778d41282b46
+tree 25f121c4bd4be722922b7eac1341eeda2f28a3b9
+parent d507d545900b32b372166f7485071eef8bcb4a7f
+author saurabhkothari <saukotha@cisco.com> 2021-07-22 15:59:24 +0530
+committer saurabhkothari <saukotha@cisco.com> 2021-07-22 15:59:24 +0530
+
+    added nae
+
+
+:100644 100644 a68571b6d92602d14867b9c91de327934316acff df617923bbf1000538536ef970a07abaf658ca93 M	vars.yml
+commit d507d545900b32b372166f7485071eef8bcb4a7f
+tree 86977e9f2e1b011be8e946e31a706c60cc5bb255
+parent fc4c326c341d3f551083a7bae0df4895dd7e76f5
+author saurabhkothari <saukotha@cisco.com> 2021-07-22 15:58:08 +0530
+committer saurabhkothari <saukotha@cisco.com> 2021-07-22 15:58:08 +0530
+
+    update
+
+
+:100644 100644 5c5ab8e9e286d0b1de74b8c895762ec430d74af5 c7903c999c1aebdda0a0d600db78062756792dc5 M	inventory
+commit fc4c326c341d3f551083a7bae0df4895dd7e76f5
+tree a06275416e9ce56dc6a4df57bd2c56ee776274df
+parent 7511bc33bd62169590822ab1809ced50bb22fafe
+author saurabhkothari <saurabhkothari@rocketmail.com> 2021-07-22 15:56:44 +0530
+committer GitHub <noreply@github.com> 2021-07-22 15:56:44 +0530
+
+    Delete pki directory
+
+:100644 000000 383bac88cac0fd7c606dea10669fe304cfc8d39f 0000000000000000000000000000000000000000 D	pki/ansible.crt
+:100644 000000 924e57d0be83d7bc1616d3b9eabbe0311aab97b1 0000000000000000000000000000000000000000 D	pki/ansible.csr
+:100644 000000 0b88bd042e4e37859982bfce8ee4bd75c7a7f281 0000000000000000000000000000000000000000 D	pki/ansible.key
+commit 7511bc33bd62169590822ab1809ced50bb22fafe
+tree 9edb3bb9621f408a5561248c79b3af0df3926022
+parent ed0a0f9525881a6fd37ce07c66a69ee23ebc7eba
+author saurabhkothari <saukotha@cisco.com> 2021-07-22 15:52:33 +0530
+committer saurabhkothari <saukotha@cisco.com> 2021-07-22 15:52:33 +0530
+
+    update
+
+
+:000000 100644 0000000000000000000000000000000000000000 318814df329e3224991720b1d20d6c058de6caec A	pcv.yaml
+commit ed0a0f9525881a6fd37ce07c66a69ee23ebc7eba
+tree 7e03aeeb47097b5a8371664bcb2750467a5b34ef
+parent 1d2dc82b8bca44f819404f00268ff0318e517fa7
+author saurabhkothari <saukotha@cisco.com> 2021-07-22 15:52:11 +0530
+committer saurabhkothari <saukotha@cisco.com> 2021-07-22 15:52:11 +0530
+
+    update
+
+
+:000000 100644 0000000000000000000000000000000000000000 7f2be96126b37f736e3424914a1a07e88edff940 A	tenant.yml
+commit 1d2dc82b8bca44f819404f00268ff0318e517fa7
+tree dcab1768f30f261ad96161dae20e66d6a225aa47
+parent d551a01d6db84ad9ad6dec814df18d4cfee0de63
+author saurabhkothari <saukotha@cisco.com> 2021-07-22 15:11:05 +0530
+committer saurabhkothari <saukotha@cisco.com> 2021-07-22 15:11:05 +0530
+
+    ver1
+
+
+:000000 100644 0000000000000000000000000000000000000000 8b137891791fe96927ad78e64b0aad7bded08bdc A	config.json

@@ -1,0 +1,53 @@
+Started by user [8mha:////4BYzosxt3HABp0wX2ykUZO3DyNzLQw0R/XoDIeZeYBa+AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL94sTSosSkDAATRBcYwgAAAA==[0mSaurabh
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/UsingJenkinsWithACI-Freestyle
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/UsingJenkinsWithACI-Freestyle/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/saurabhkothari/Cisco-ACI-Shell.git # timeout=10
+Fetching upstream changes from https://github.com/saurabhkothari/Cisco-ACI-Shell.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git fetch --tags --force --progress -- https://github.com/saurabhkothari/Cisco-ACI-Shell.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 89928169a392547dd55c14a2f826aeb4d7951eb5 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 89928169a392547dd55c14a2f826aeb4d7951eb5 # timeout=10
+Commit message: "Update create_tenant.sh"
+ > git rev-list --no-walk 89928169a392547dd55c14a2f826aeb4d7951eb5 # timeout=10
+[UsingJenkinsWithACI-Freestyle] $ /bin/sh -xe /tmp/jenkins8568022429268197898.sh
++ bash common.sh
+
+### logging in ###
+Login OK
+ ### Printing list of all Tenants ###
+
+infra
+mgmt
+common
+
+ ### adding tenant ###
+{"totalCount":"0","imdata":[]}
+ ### Printing list of all Tenants ###
+
+infra
+mgmt
+common
+TEST1234
+
+ ### Deleting Tenant ###
+
+{"totalCount":"0","imdata":[]}
+ ### Printing list of all Tenants ###
+
+infra
+mgmt
+common
+
+### removing cookie.txt ### 
+
++ echo 0
+0
+Finished: SUCCESS

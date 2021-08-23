@@ -1,0 +1,528 @@
+Started by user [8mha:////4BYzosxt3HABp0wX2ykUZO3DyNzLQw0R/XoDIeZeYBa+AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL94sTSosSkDAATRBcYwgAAAA==[0mSaurabh
+Obtained Jenkinsfile from git https://github.com/saurabhkothari/Cisco-ACI-NAE.git
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4NVcH+kr/Zofd/bnAqUJvRoMPp5r7MKxcvb2IY9HpO57AAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4G3laZKa2dIUj2GSDxxmbXJvXi7rjhs4OpYCYel7fQbcAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4B1wEKae+hj/ddRZijoZUO/CI0P1TwZGFwRYUan7LHB0AAAAtB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz1EgYN/eT83ILSktQi/cTkTN3EvOLMpJxU3bzEVF0DA4OCrAqjLHPjEssifQAUyp0o3QAAAA==[0maci-ansible-nae-000pjx2j73t9r on docker in /workspace/TenantOnboardingWithNAE
+[8mha:////4OJ8458NsA1S1mJAeku5iLYvl9jDUm3nO4b6coqMsCokAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4He1EYm+vhd18zUyNX+k/XTFKIx72WLpRy5nf2IjgaYqAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4IpVwSHmwpaIDwLb93sbNK25lVRl6+22EOd2kxrbW/nMAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4BN4pablDwImOgzLigazZc9IJUG8Sj5oEv241a9qilMyAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/saurabhkothari/Cisco-ACI-NAE.git
+ > git init /workspace/TenantOnboardingWithNAE # timeout=10
+Fetching upstream changes from https://github.com/saurabhkothari/Cisco-ACI-NAE.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.32.0'
+ > git fetch --tags --force --progress -- https://github.com/saurabhkothari/Cisco-ACI-NAE.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+Checking out Revision ee959d39c870769c0a1afaaad2704d9d8c824999 (refs/remotes/origin/main)
+Commit message: "Update Jenkinsfile"
+ > git config remote.origin.url https://github.com/saurabhkothari/Cisco-ACI-NAE.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ee959d39c870769c0a1afaaad2704d9d8c824999 # timeout=10
+ > git rev-list --no-walk ee959d39c870769c0a1afaaad2704d9d8c824999 # timeout=10
+[8mha:////4KQlnJ/jDUuTBxgcWjE/Ipc3rFOhR/5Hh00uU8FRETKpAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4JfUgqwiEIwg7UgZZQFK3mcYC+10g9znCMrP8w4BZdhDAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4N0Nuzr7pox5hZluevsxpgj8fL2x7zcforTSRD30oGSvAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4AniGK5X8KYGtCTqaQYfSDDl5PLy3dGWvQ3GtUjeJnOvAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4H3t/0i6fLQwp9Co0Aqmk9a6iA7fFFlaOP9WJQ7Q1nl+AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] stage
+[8mha:////4J1g8adbgAWCWP6aUBJoRlCCg58scL8nZiac2fn+WignAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] { (Git )
+[8mha:////4Gq5W2CRT8c1d0IhM18ddjLgXHPAamCmM+0QDcgsNq0WAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBgq0rvS+AAAA[0m[Pipeline] git
+The recommended git tool is: NONE
+No credentials specified
+Fetching changes from the remote Git repository
+ > git rev-parse --resolve-git-dir /workspace/TenantOnboardingWithNAE/.git # timeout=10
+ > git config remote.origin.url https://github.com/saurabhkothari/Cisco-ACI.git # timeout=10
+Fetching upstream changes from https://github.com/saurabhkothari/Cisco-ACI.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.32.0'
+ > git fetch --tags --force --progress -- https://github.com/saurabhkothari/Cisco-ACI.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking out Revision a37a9e4aaa7eadd443f91fa72a1491c188eb9377 (refs/remotes/origin/main)
+Commit message: "Update tenant.yml"
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a37a9e4aaa7eadd443f91fa72a1491c188eb9377 # timeout=10
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b main a37a9e4aaa7eadd443f91fa72a1491c188eb9377 # timeout=10
+ > git rev-list --no-walk f0c957e634527d9af759c2d2dbad009dd23ecd4a # timeout=10
+[8mha:////4I8wd0iIXfPqLSbkUpgSOSLiHhSal8fAQ2KhOWaaigp1AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N7BnLt++AAAA[0m[Pipeline] }
+[8mha:////4KUJfOKdKaPPgpkOHhu2tDcq2dk5n/5wSIId60gghLxeAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N4glvS6+AAAA[0m[Pipeline] // stage
+[8mha:////4O1yzm/kyZ7oefeT52cp8FLloV5ffAZsNz3uHZClJgzDAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUnRgQE2uUhROEJoSk0f9tkpJOnIircQdaKjHhwbItWe/1hioGOFEwzGnsLMbWst6PZk4sU+hunjJzdGUtYSSvmdBZkNLntQpKGlYVJWw4bDW2nqJFk2DHnXzI2ks09SWFeTtyKK0a4AkFn8lJhvQtU4D9fVSR8Mf5C4CpT1A2zWKH5Vl9ANydZ8vCAAAA[0m[Pipeline] stage
+[8mha:////4CIEhMiuBDHY2262VMG6pJUf/zSpWG73ppAb9RQDW52pAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] { (Generate Config)
+[8mha:////4O4nx7u1iZKUvObvjjtskYufpxOvh830EKq1BuZBgGrBAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUbCDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASnCIIrCAAAA[0m[Pipeline] withCredentials
+Masking supported pattern matches of $key
+[8mha:////4Adndrz3q8MKQu9rHGqtwu7E58KtkV5PnWp+nxINsXV5AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogU2BDqxBp14QShCSFp9H9JUtKJE3E17kCgEhMeLNuS9Z4vqIKHhrxmVmFvMHSGDW7UObFEvr84SszSmXWEgZxirUotSXWca0tRwayihAWHpcLOUTCoI6y4FXdRO4G6PkWftwOH0sgbPKDgmRyFj98yeVhfRxkIf5y/AJiGCOV2n223+TyrN7xWSV3CAAAA[0m[Pipeline] {
+[8mha:////4FFXoxmRdhbxn66PR2mouFQzsjgr9QFg5b9PPdg1qCjlAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUWBFT1ygLJwhNCGmj/8tPSjtxIq7GHWipxIQHy7ZkvdcbishwInaisdh6jLUXXejdlMRA3F4DDaKhi6gJIwUrlB0UGVstVVGysCjLYSVhbbEOFD26BBvZ6Icug0ZXnhNP21FC7s0dnpDJiZw0p28ZGba33kTCH+cvAMYuQX7Yzbafn8UHbGnGmsIAAAA=[0m[Pipeline] ansiColor
+[8mha:////4NeRiiSoAHOyNW+miurOgFZeY6TVXI1qvnEpbdJ8NJIdAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUdEVMrFEXThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbyhjgRMFwp7GzGFvLez+aOfFMobt5ytzRlbeEkbzmjc4NKX1ea0NJw6qCwUbAVmPrKVo0CXbCyYesvERTXVKYt6MAZtUATyjETE4ypG+ZAuzvo4qEP85fAEx9AlYfFquXZ/kBAsTc3cIAAAA=[0m[Pipeline] {
+[8mha:////4Da7PkkHOnZ7a4tmM9VrtMyP8wC/MxbLB5Ro4mBbaWHiAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFeNEQyPjFFMTXaNkC0Ndk5RUQ12LFLMkXfM000QLyyST1MQ0SwD3ltQfrwAAAA==[0m
+[8mha:////4IIrrugLo8RAX//izA4OH6gJ7v3Ikemux8QRgMt+DC6bAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyE0vHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzD5B3baf2vs3w5BRkb4AAAA=[0m[Pipeline] ansiblePlaybook
+Warning: A secret was passed to "ansiblePlaybook" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [key]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
+[TenantOnboardingWithNAE] $ ansible-playbook tenant.yml -i inventory --vault-password-file /workspace/TenantOnboardingWithNAE/vault8809529783014799600.password -e private_key=**** --check -vvv
+[0;34mansible-playbook 2.10.5[0m
+[0;34m  config file = /workspace/TenantOnboardingWithNAE/ansible.cfg[0m
+[0;34m  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules'][0m
+[0;34m  ansible python module location = /usr/lib/python3.9/site-packages/ansible[0m
+[0;34m  executable location = /usr/bin/ansible-playbook[0m
+[0;34m  python version = 3.9.5 (default, May 12 2021, 20:44:22) [GCC 10.3.1 20210424][0m
+[0;34mUsing /workspace/TenantOnboardingWithNAE/ansible.cfg as config file[0m
+[0;34mhost_list declined parsing /workspace/TenantOnboardingWithNAE/inventory as it did not pass its verify_file() method[0m
+[0;34mscript declined parsing /workspace/TenantOnboardingWithNAE/inventory as it did not pass its verify_file() method[0m
+[0;34mauto declined parsing /workspace/TenantOnboardingWithNAE/inventory as it did not pass its verify_file() method[0m
+[1;35m[WARNING]: Invalid characters were found in group names but not replaced, use[0m
+[1;35m-vvvv to see details[0m
+[0;34mParsed /workspace/TenantOnboardingWithNAE/inventory inventory source with ini plugin[0m
+[1;35m[WARNING]: While constructing a mapping from[0m
+[1;35m/workspace/TenantOnboardingWithNAE/tenant.yml, line 42, column 13, found a[0m
+[1;35mduplicate dict key (use_proxy). Using last defined value only.[0m
+[1;35m[WARNING]: While constructing a mapping from[0m
+[1;35m/workspace/TenantOnboardingWithNAE/tenant.yml, line 52, column 13, found a[0m
+[1;35mduplicate dict key (use_proxy). Using last defined value only.[0m
+[0;34mredirecting (type: modules) ansible.builtin.aci_tenant to cisco.aci.aci_tenant[0m
+[0;34mredirecting (type: modules) ansible.builtin.aci_vrf to cisco.aci.aci_vrf[0m
+[0;34mredirecting (type: modules) ansible.builtin.aci_bd to cisco.aci.aci_bd[0m
+[0;34mredirecting (type: modules) ansible.builtin.aci_bd_subnet to cisco.aci.aci_bd_subnet[0m
+[0;34mSkipping callback 'default', as we already have a stdout callback.[0m
+[0;34mSkipping callback 'minimal', as we already have a stdout callback.[0m
+[0;34mSkipping callback 'oneline', as we already have a stdout callback.[0m
+
+PLAYBOOK: tenant.yml ***********************************************************
+[0;34m1 plays in tenant.yml[0m
+[0;34mRead vars_file 'vars.yml'[0m
+[0;34mRead vars_file 'vars.yml'[0m
+[0;34mRead vars_file 'vars.yml'[0m
+
+PLAY [site-1] ******************************************************************
+[0;34mRead vars_file 'vars.yml'[0m
+[0;34mMETA: ran handlers[0m
+[0;34mRead vars_file 'vars.yml'[0m
+[0;34mRead vars_file 'vars.yml'[0m
+
+TASK [Create tenants] **********************************************************
+[1;30mtask path: /workspace/TenantOnboardingWithNAE/tenant.yml:25[0m
+[0;34m<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root[0m
+[0;34m<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'[0m
+[0;34m<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1627480229.457026-328-247864778498490 `" && echo ansible-tmp-1627480229.457026-328-247864778498490="` echo /root/.ansible/tmp/ansible-tmp-1627480229.457026-328-247864778498490 `" ) && sleep 0'[0m
+[0;34mredirecting (type: modules) ansible.builtin.aci_tenant to cisco.aci.aci_tenant[0m
+[0;34mUsing module file /root/.ansible/collections/ansible_collections/cisco/aci/plugins/modules/aci_tenant.py[0m
+[0;34m<localhost> PUT /root/.ansible/tmp/ansible-local-313h6v1432p/tmpu8gp9296 TO /root/.ansible/tmp/ansible-tmp-1627480229.457026-328-247864778498490/AnsiballZ_aci_tenant.py[0m
+[0;34m<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1627480229.457026-328-247864778498490/ /root/.ansible/tmp/ansible-tmp-1627480229.457026-328-247864778498490/AnsiballZ_aci_tenant.py && sleep 0'[0m
+[0;34m<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1627480229.457026-328-247864778498490/AnsiballZ_aci_tenant.py && sleep 0'[0m
+[0;34m<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1627480229.457026-328-247864778498490/ > /dev/null 2>&1 && sleep 0'[0m
+[0;32mok: [10.106.236.54] => {[0m
+[0;32m    "changed": false,[0m
+[0;32m    "current": [[0m
+[0;32m        {[0m
+[0;32m            "fvTenant": {[0m
+[0;32m                "attributes": {[0m
+[0;32m                    "annotation": "",[0m
+[0;32m                    "descr": "",[0m
+[0;32m                    "dn": "uni/tn-saukotha_acc",[0m
+[0;32m                    "name": "saukotha_acc",[0m
+[0;32m                    "nameAlias": "",[0m
+[0;32m                    "ownerKey": "",[0m
+[0;32m                    "ownerTag": "",[0m
+[0;32m                    "userdom": ":all:mgmt:common:"[0m
+[0;32m                }[0m
+[0;32m            }[0m
+[0;32m        }[0m
+[0;32m    ],[0m
+[0;32m    "invocation": {[0m
+[0;32m        "module_args": {[0m
+[0;32m            "annotation": null,[0m
+[0;32m            "certificate_name": "ansible",[0m
+[0;32m            "description": null,[0m
+[0;32m            "host": "10.106.236.54",[0m
+[0;32m            "hostname": "10.106.236.54",[0m
+[0;32m            "name_alias": null,[0m
+[0;32m            "output_level": "normal",[0m
+[0;32m            "output_path": "config.json",[0m
+[0;32m            "owner_key": null,[0m
+[0;32m            "owner_tag": null,[0m
+[0;32m            "password": null,[0m
+[0;32m            "port": null,[0m
+[0;32m            "private_key": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",[0m
+[0;32m            "protocol": "https",[0m
+[0;32m            "state": "present",[0m
+[0;32m            "tenant": "saukotha_acc",[0m
+[0;32m            "timeout": 30,[0m
+[0;32m            "use_proxy": false,[0m
+[0;32m            "use_ssl": true,[0m
+[0;32m            "username": "ansible",[0m
+[0;32m            "validate_certs": false[0m
+[0;32m        }[0m
+[0;32m    },[0m
+[0;32m    "mo": {[0m
+[0;32m        "fvTenant": {[0m
+[0;32m            "attributes": {[0m
+[0;32m                "dn": "uni/tn-saukotha_acc",[0m
+[0;32m                "name": "saukotha_acc"[0m
+[0;32m            }[0m
+[0;32m        }[0m
+[0;32m    }[0m
+[0;32m}[0m
+[0;34mRead vars_file 'vars.yml'[0m
+[0;34mRead vars_file 'vars.yml'[0m
+
+TASK [ensure context for tenant exists] ****************************************
+[1;30mtask path: /workspace/TenantOnboardingWithNAE/tenant.yml:32[0m
+[0;34m<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root[0m
+[0;34m<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'[0m
+[0;34m<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1627480230.4789245-344-179255493174289 `" && echo ansible-tmp-1627480230.4789245-344-179255493174289="` echo /root/.ansible/tmp/ansible-tmp-1627480230.4789245-344-179255493174289 `" ) && sleep 0'[0m
+[0;34mredirecting (type: modules) ansible.builtin.aci_vrf to cisco.aci.aci_vrf[0m
+[0;34mUsing module file /root/.ansible/collections/ansible_collections/cisco/aci/plugins/modules/aci_vrf.py[0m
+[0;34m<localhost> PUT /root/.ansible/tmp/ansible-local-313h6v1432p/tmp7qgojcux TO /root/.ansible/tmp/ansible-tmp-1627480230.4789245-344-179255493174289/AnsiballZ_aci_vrf.py[0m
+[0;34m<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1627480230.4789245-344-179255493174289/ /root/.ansible/tmp/ansible-tmp-1627480230.4789245-344-179255493174289/AnsiballZ_aci_vrf.py && sleep 0'[0m
+[0;34m<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1627480230.4789245-344-179255493174289/AnsiballZ_aci_vrf.py && sleep 0'[0m
+[0;34m<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1627480230.4789245-344-179255493174289/ > /dev/null 2>&1 && sleep 0'[0m
+[0;32mok: [10.106.236.54] => {[0m
+[0;32m    "changed": false,[0m
+[0;32m    "current": [[0m
+[0;32m        {[0m
+[0;32m            "fvCtx": {[0m
+[0;32m                "attributes": {[0m
+[0;32m                    "annotation": "",[0m
+[0;32m                    "bdEnforcedEnable": "no",[0m
+[0;32m                    "descr": "",[0m
+[0;32m                    "dn": "uni/tn-saukotha_acc/ctx-saukotha_acc",[0m
+[0;32m                    "ipDataPlaneLearning": "enabled",[0m
+[0;32m                    "knwMcastAct": "permit",[0m
+[0;32m                    "name": "saukotha_acc",[0m
+[0;32m                    "nameAlias": "",[0m
+[0;32m                    "ownerKey": "",[0m
+[0;32m                    "ownerTag": "",[0m
+[0;32m                    "pcEnfDir": "ingress",[0m
+[0;32m                    "pcEnfPref": "enforced",[0m
+[0;32m                    "userdom": ":all:mgmt:common:",[0m
+[0;32m                    "vrfIndex": "0"[0m
+[0;32m                },[0m
+[0;32m                "children": [[0m
+[0;32m                    {[0m
+[0;32m                        "vzAny": {[0m
+[0;32m                            "attributes": {[0m
+[0;32m                                "annotation": "",[0m
+[0;32m                                "descr": "",[0m
+[0;32m                                "matchT": "AtleastOne",[0m
+[0;32m                                "name": "",[0m
+[0;32m                                "nameAlias": "",[0m
+[0;32m                                "prefGrMemb": "disabled",[0m
+[0;32m                                "userdom": "all"[0m
+[0;32m                            }[0m
+[0;32m                        }[0m
+[0;32m                    }[0m
+[0;32m                ][0m
+[0;32m            }[0m
+[0;32m        }[0m
+[0;32m    ],[0m
+[0;32m    "invocation": {[0m
+[0;32m        "module_args": {[0m
+[0;32m            "annotation": null,[0m
+[0;32m            "certificate_name": "ansible",[0m
+[0;32m            "description": null,[0m
+[0;32m            "host": "10.106.236.54",[0m
+[0;32m            "hostname": "10.106.236.54",[0m
+[0;32m            "match_type": null,[0m
+[0;32m            "name_alias": null,[0m
+[0;32m            "output_level": "normal",[0m
+[0;32m            "output_path": "config.json",[0m
+[0;32m            "owner_key": null,[0m
+[0;32m            "owner_tag": null,[0m
+[0;32m            "password": null,[0m
+[0;32m            "policy_control_direction": null,[0m
+[0;32m            "policy_control_preference": null,[0m
+[0;32m            "port": null,[0m
+[0;32m            "preferred_group": null,[0m
+[0;32m            "private_key": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",[0m
+[0;32m            "protocol": "https",[0m
+[0;32m            "state": "present",[0m
+[0;32m            "tenant": "saukotha_acc",[0m
+[0;32m            "timeout": 30,[0m
+[0;32m            "use_proxy": false,[0m
+[0;32m            "use_ssl": true,[0m
+[0;32m            "username": "ansible",[0m
+[0;32m            "validate_certs": false,[0m
+[0;32m            "vrf": "saukotha_acc",[0m
+[0;32m            "vrf_name": "saukotha_acc"[0m
+[0;32m        }[0m
+[0;32m    },[0m
+[0;32m    "mo": {[0m
+[0;32m        "fvCtx": {[0m
+[0;32m            "attributes": {[0m
+[0;32m                "dn": "uni/tn-saukotha_acc/ctx-saukotha_acc",[0m
+[0;32m                "name": "saukotha_acc"[0m
+[0;32m            }[0m
+[0;32m        }[0m
+[0;32m    }[0m
+[0;32m}[0m
+[0;34mRead vars_file 'vars.yml'[0m
+[0;34mRead vars_file 'vars.yml'[0m
+
+TASK [Creating BD] *************************************************************
+[1;30mtask path: /workspace/TenantOnboardingWithNAE/tenant.yml:40[0m
+[0;34m<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root[0m
+[0;34m<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'[0m
+[0;34m<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1627480232.5204947-360-73696849746270 `" && echo ansible-tmp-1627480232.5204947-360-73696849746270="` echo /root/.ansible/tmp/ansible-tmp-1627480232.5204947-360-73696849746270 `" ) && sleep 0'[0m
+[0;34mredirecting (type: modules) ansible.builtin.aci_bd to cisco.aci.aci_bd[0m
+[0;34mUsing module file /root/.ansible/collections/ansible_collections/cisco/aci/plugins/modules/aci_bd.py[0m
+[0;34m<localhost> PUT /root/.ansible/tmp/ansible-local-313h6v1432p/tmp_zbzy3hl TO /root/.ansible/tmp/ansible-tmp-1627480232.5204947-360-73696849746270/AnsiballZ_aci_bd.py[0m
+[0;34m<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1627480232.5204947-360-73696849746270/ /root/.ansible/tmp/ansible-tmp-1627480232.5204947-360-73696849746270/AnsiballZ_aci_bd.py && sleep 0'[0m
+[0;34m<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1627480232.5204947-360-73696849746270/AnsiballZ_aci_bd.py && sleep 0'[0m
+[0;34m<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1627480232.5204947-360-73696849746270/ > /dev/null 2>&1 && sleep 0'[0m
+[0;33mchanged: [10.106.236.54] => {[0m
+[0;33m    "changed": true,[0m
+[0;33m    "current": [],[0m
+[0;33m    "invocation": {[0m
+[0;33m        "module_args": {[0m
+[0;33m            "annotation": null,[0m
+[0;33m            "arp_flooding": null,[0m
+[0;33m            "bd": "acc_BD4",[0m
+[0;33m            "bd_type": null,[0m
+[0;33m            "certificate_name": "ansible",[0m
+[0;33m            "description": null,[0m
+[0;33m            "enable_multicast": null,[0m
+[0;33m            "enable_routing": null,[0m
+[0;33m            "endpoint_clear": null,[0m
+[0;33m            "endpoint_move_detect": null,[0m
+[0;33m            "endpoint_retention_action": null,[0m
+[0;33m            "endpoint_retention_policy": null,[0m
+[0;33m            "host": "10.106.236.54",[0m
+[0;33m            "hostname": "10.106.236.54",[0m
+[0;33m            "igmp_snoop_policy": null,[0m
+[0;33m            "ip_learning": null,[0m
+[0;33m            "ipv6_nd_policy": null,[0m
+[0;33m            "l2_unknown_unicast": null,[0m
+[0;33m            "l3_unknown_multicast": null,[0m
+[0;33m            "limit_ip_learn": null,[0m
+[0;33m            "mac_address": null,[0m
+[0;33m            "multi_dest": null,[0m
+[0;33m            "name_alias": null,[0m
+[0;33m            "output_level": "normal",[0m
+[0;33m            "output_path": "config.json",[0m
+[0;33m            "owner_key": null,[0m
+[0;33m            "owner_tag": null,[0m
+[0;33m            "password": null,[0m
+[0;33m            "port": null,[0m
+[0;33m            "private_key": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",[0m
+[0;33m            "protocol": "https",[0m
+[0;33m            "state": "present",[0m
+[0;33m            "tenant": "saukotha_acc",[0m
+[0;33m            "timeout": 30,[0m
+[0;33m            "use_proxy": false,[0m
+[0;33m            "use_ssl": true,[0m
+[0;33m            "username": "ansible",[0m
+[0;33m            "validate_certs": false,[0m
+[0;33m            "vrf": "saukotha_acc",[0m
+[0;33m            "vrf_name": "saukotha_acc"[0m
+[0;33m        }[0m
+[0;33m    },[0m
+[0;33m    "mo": {[0m
+[0;33m        "fvBD": {[0m
+[0;33m            "attributes": {[0m
+[0;33m                "dn": "uni/tn-saukotha_acc/BD-acc_BD4",[0m
+[0;33m                "name": "acc_BD4"[0m
+[0;33m            },[0m
+[0;33m            "children": [[0m
+[0;33m                {[0m
+[0;33m                    "fvRsCtx": {[0m
+[0;33m                        "attributes": {[0m
+[0;33m                            "tnFvCtxName": "saukotha_acc"[0m
+[0;33m                        }[0m
+[0;33m                    }[0m
+[0;33m                }[0m
+[0;33m            ][0m
+[0;33m        }[0m
+[0;33m    }[0m
+[0;33m}[0m
+[0;34mRead vars_file 'vars.yml'[0m
+[0;34mRead vars_file 'vars.yml'[0m
+
+TASK [Create a subnet] *********************************************************
+[1;30mtask path: /workspace/TenantOnboardingWithNAE/tenant.yml:50[0m
+[0;34m<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root[0m
+[0;34m<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'[0m
+[0;34m<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1627480233.492428-376-43078974568259 `" && echo ansible-tmp-1627480233.492428-376-43078974568259="` echo /root/.ansible/tmp/ansible-tmp-1627480233.492428-376-43078974568259 `" ) && sleep 0'[0m
+[0;34mredirecting (type: modules) ansible.builtin.aci_bd_subnet to cisco.aci.aci_bd_subnet[0m
+[0;34mUsing module file /root/.ansible/collections/ansible_collections/cisco/aci/plugins/modules/aci_bd_subnet.py[0m
+[0;34m<localhost> PUT /root/.ansible/tmp/ansible-local-313h6v1432p/tmp207oo8my TO /root/.ansible/tmp/ansible-tmp-1627480233.492428-376-43078974568259/AnsiballZ_aci_bd_subnet.py[0m
+[0;34m<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1627480233.492428-376-43078974568259/ /root/.ansible/tmp/ansible-tmp-1627480233.492428-376-43078974568259/AnsiballZ_aci_bd_subnet.py && sleep 0'[0m
+[0;34m<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1627480233.492428-376-43078974568259/AnsiballZ_aci_bd_subnet.py && sleep 0'[0m
+[0;34m<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1627480233.492428-376-43078974568259/ > /dev/null 2>&1 && sleep 0'[0m
+[0;33mchanged: [10.106.236.54] => {[0m
+[0;33m    "changed": true,[0m
+[0;33m    "current": [],[0m
+[0;33m    "invocation": {[0m
+[0;33m        "module_args": {[0m
+[0;33m            "annotation": null,[0m
+[0;33m            "bd": "acc_BD4",[0m
+[0;33m            "certificate_name": "ansible",[0m
+[0;33m            "description": null,[0m
+[0;33m            "enable_vip": null,[0m
+[0;33m            "gateway": "10.10.101.1",[0m
+[0;33m            "host": "10.106.236.54",[0m
+[0;33m            "hostname": "10.106.236.54",[0m
+[0;33m            "mask": 24,[0m
+[0;33m            "name_alias": null,[0m
+[0;33m            "nd_prefix_policy": null,[0m
+[0;33m            "output_level": "normal",[0m
+[0;33m            "output_path": "config.json",[0m
+[0;33m            "owner_key": null,[0m
+[0;33m            "owner_tag": null,[0m
+[0;33m            "password": null,[0m
+[0;33m            "port": null,[0m
+[0;33m            "preferred": null,[0m
+[0;33m            "private_key": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",[0m
+[0;33m            "protocol": "https",[0m
+[0;33m            "route_profile": null,[0m
+[0;33m            "route_profile_l3_out": null,[0m
+[0;33m            "scope": null,[0m
+[0;33m            "state": "present",[0m
+[0;33m            "subnet_control": null,[0m
+[0;33m            "subnet_name": null,[0m
+[0;33m            "tenant": "saukotha_acc",[0m
+[0;33m            "timeout": 30,[0m
+[0;33m            "use_proxy": false,[0m
+[0;33m            "use_ssl": true,[0m
+[0;33m            "username": "ansible",[0m
+[0;33m            "validate_certs": false[0m
+[0;33m        }[0m
+[0;33m    },[0m
+[0;33m    "mo": {[0m
+[0;33m        "fvSubnet": {[0m
+[0;33m            "attributes": {[0m
+[0;33m                "dn": "uni/tn-saukotha_acc/BD-acc_BD4/subnet-[10.10.101.1/24]",[0m
+[0;33m                "ip": "10.10.101.1/24"[0m
+[0;33m            }[0m
+[0;33m        }[0m
+[0;33m    }[0m
+[0;33m}[0m
+[0;34mRead vars_file 'vars.yml'[0m
+[0;34mMETA: ran handlers[0m
+[0;34mRead vars_file 'vars.yml'[0m
+[0;34mMETA: ran handlers[0m
+
+PLAY RECAP *********************************************************************
+[0;33m10.106.236.54[0m              : [0;32mok=4   [0m [0;33mchanged=2   [0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+[8mha:////4MBgYBFH9Jopa+EaFaYElEvryrWdu08fngYS61UN8GXzAAAApB+LCAAAAAAAAP9tjbEOwiAURV9rHFwd/QiaNG7GyZWw+AXYIkLJexSodPKL/DX/QbSJk3e4uecu5/mCdQxwpKCZVTgYjJ1h3k26LJYpDFdHmVm6sI4wklNMqCyoV6cFBSUFS6oaVhw2CjtH0aBOsOVW3mXjJOrmnEL5Dhxq04/wgIoXc5IhfWEOsLtNfST8ef4KYPY+Qd3uP9W+Ad3NsHm+AAAA[0m[Pipeline] }
+[8mha:////4MBk6W9KI6JOVMaBm8gaTiiZr2YpvduoSp3Xlnin6ZHeAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGlURjA0OjFDNT3RRzEyNdE0ujRN0ksxQDXZPENOPUVDNDIwuLFACkSZx6rwAAAA==[0m
+[8mha:////4Jocmv8TOOcjJelV5sFoq3ZXRRuLIQnBB0qbEjD1mDHFAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN8JP5Su+AAAA[0m[Pipeline] // ansiColor
+[8mha:////4DpQlIkAU5GjjWAtnL9ZGeGPShBJM53oStKl0OjOGNKDAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCKGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN/oNdtq+AAAA[0m[Pipeline] }
+[8mha:////4GiG7lH5MgIExz6JYUzFSr7nYUF/Dp6Z+Vz1/a9xcZdRAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiaBBCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw84NdtDvgAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4DwA6ZXX2af7Ze3h8cmxX/aEiPHiB3Y1Iusr8/1/EogQAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiqCIhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJygPda59/QF7t4rFvgAAAA==[0m[Pipeline] }
+[8mha:////4A8sRSVrhi3R/136Ob3qwO9ONUyphuHujmFAifSni383AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiaBBCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuDrm2+w9PeWmevgAAAA==[0m[Pipeline] // stage
+[8mha:////4LNIcyu2KggEaKRuV9cdoPzAJhgqTAdss2tZqlBrlK5oAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoiUihExdY2ycIKQhJA2+r8kKe3EibgadyBQiQkPlm3Jes8XVDHAkYJlncHeYVSODX60ObGJQn/xNLGOzkwRRvKGCTMJ0qZdqqBkYFFRworD2qDyFB3aBBveybusvURbn1LI24FD6fQNHlDwTE4ypG+ZA2yvo46EP85fAMxDgrJpsu13n2f1Bk28/UHCAAAA[0m[Pipeline] stage
+[8mha:////4NVfXWGahSEWMBRpb8LWR8eaMQBr6lJZAW3i+KHdt/5bAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUxIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+ty4Up8IAAAA=[0m[Pipeline] { (Validate Config)
+[8mha:////4CBMbo3yuKrL+jL0v/+ObTqfw/j4rKJ2l22clYAlhCnkAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+2YMO4MIAAAA=[0m[Pipeline] withCredentials
+Masking supported pattern matches of $key
+[8mha:////4PLxEBXOHrfM78guHe6SVya9g8swdzxPw7lhJoMPRHFIAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUoiNiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPfTawssIAAAA=[0m[Pipeline] {
+[8mha:////4B6+o2AHBgb8hYTF8lvqQATJyaufRov3XCzQIgqUQOHUAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KBtiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPBdk7bsIAAAA=[0m[Pipeline] ansiColor
+[8mha:////4Dn/3bh3BiH9SYHl5j2OZnlN30vhbcy+RnBJtu4reWZQAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ACbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASMfXIzCAAAA[0m[Pipeline] {
+[8mha:////4Ekz4Q1RufMPRn8D1aEWR4RshyHDutrMXYejbwmxmHd5AAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFYukZHNLC1MLXRMLY0tdE8PUZN1EE7NUXQsjo8TEFEuLJBNLSwCPw2cBrwAAAA==[0m
+[8mha:////4IKOdvm66TNjdXCpNyDKF9NkWCCyKxnzq90uvkM0PXU9AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN6Ew6eS+AAAA[0m[Pipeline] ansiblePlaybook
+[TenantOnboardingWithNAE] $ ansible-playbook pcv.yaml -i inventory --vault-password-file /workspace/TenantOnboardingWithNAE/vault582414511432902282.password
+[1;35m[WARNING]: Invalid characters were found in group names but not replaced, use[0m
+[1;35m-vvvv to see details[0m
+
+PLAY [Pre-Change Analysys] *****************************************************
+
+TASK [Create a pre-change analysis] ********************************************
+[0;33mchanged: [10.76.101.135][0m
+
+TASK [Get PCV Result] **********************************************************
+[0;32mok: [10.76.101.135][0m
+
+PLAY RECAP *********************************************************************
+[0;33m10.76.101.135[0m              : [0;32mok=2   [0m [0;33mchanged=1   [0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+[8mha:////4DmZYXtE02hcHKT35MdVzUlrlJsoOPUDk0zM5+OOypStAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIESBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQElECzevgAAAA==[0m[Pipeline] }
+[8mha:////4NuprbUrS+StKK3CqePnXAm+4WWW6CWKj0cX1Ny4GpkLAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGlSRz06QUAwtz3dRkMyNdE+M0S13LVMMkXTNzUxMzExMDyyRTYwAvUxu/rwAAAA==[0m
+[8mha:////4EKxlU+y6A0tLdu+0Zp5B+Qj56TJTwPpm1Hahmgi0vXGAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSQIGEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQFmkn1YvgAAAA==[0m[Pipeline] // ansiColor
+[8mha:////4HQYgB8B101YvtqQe5Mm5SX/hDkRbI/4iI6G4dm3KqUvAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSpHIcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMHufoG73n2rfYNRFDb4AAAA=[0m[Pipeline] }
+[8mha:////4MAsvt+YX7f79O9VJqHF8z/QIh4f06HjYCH5hE8zO6gzAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCgA6lorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYhQnnY5trvPrCL6pi+AAAA[0m[Pipeline] // withCredentials
+[8mha:////4LaYbR9J6kQZgU3BBz0Dx+gIofVo/IBT8RUxBmdLhBrDAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiCDpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOWhzrWvP68Jv8q+AAAA[0m[Pipeline] }
+[8mha:////4DHz6rYa0UOktLBLqLGJa/nCi3jA6OQJFAXbWLfIbuwSAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCgA6lorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYhQnnY5dpvP5dLLDu+AAAA[0m[Pipeline] // stage
+[8mha:////4F3gDtFleiEvZxuUylBH4oaLZpBGIk+xWzhFtYtKhGIyAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUFWyIqWvUhROEJoSk0f8lSUknTsTVuAOBSkx4sGxL1nu+oAoejuQ1swoHg6E3bHSTzokl8sPFUWKWzqwnDOQU61TqSKp2qR1FBYuKElYc1gp7R8GgjrDhVtxF7QTq+hR93g4cSiNv8ICCZ3IUPn7L7GF7nWQg/HH+AmAeI5RNk22/+zyrN23wzgLCAAAA[0m[Pipeline] stage
+[8mha:////4B7g5T5LjtYqJarZw5QNXPuLDxlZ4Ul5Ml/D0wCfgpiwAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoh0oBtiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPBA4E38IAAAA=[0m[Pipeline] { (Push Config)
+[8mha:////4EWO7gphtskd0kbEg/G/d46EAfSmAO45yEIw8qEdFYCmAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KRNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPIshjPcIAAAA=[0m[Pipeline] withCredentials
+Masking supported pattern matches of $key
+[8mha:////4Ea5mUxUe0kVBGCVsRZrOBfMsv6xbPPc3iEU9Kjc0mwSAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ARbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAUxleXrCAAAA[0m[Pipeline] {
+[8mha:////4K2hE7O6smwn7jQKGOzRkgea/WQxhx5TWZ7HB/TzDuwZAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QTAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD+jQxyjCAAAA[0m[Pipeline] ansiColor
+[8mha:////4AggFm6LLNyvKI7+RYWptH817sTem5IzdVeqe1Q1lUcCAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QQIJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAD9vR8YwgAAAA==[0m[Pipeline] {
+[8mha:////4G3+sD88yc+ICzxUAyLq8cjlH52JXYvSPbSixpwwH+RCAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGlTQL0yTDVDMjXRML0zRdE8skQ93ElMRUXUsDw2SztFQjY1MjCwD0JSpVrwAAAA==[0m
+[8mha:////4Fs4r+BDNpwfckLAIS+uq3CQ5AWcT2C27RgcMMhX62FAAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSUIAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHNzJSLA2+AAAA[0m[Pipeline] ansiblePlaybook
+Warning: A secret was passed to "ansiblePlaybook" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [key]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
+[TenantOnboardingWithNAE] $ ansible-playbook tenant.yml -i inventory --vault-password-file /workspace/TenantOnboardingWithNAE/vault7111842773990235926.password -e private_key=****
+[1;35m[WARNING]: Invalid characters were found in group names but not replaced, use[0m
+[1;35m-vvvv to see details[0m
+[1;35m[WARNING]: While constructing a mapping from[0m
+[1;35m/workspace/TenantOnboardingWithNAE/tenant.yml, line 42, column 13, found a[0m
+[1;35mduplicate dict key (use_proxy). Using last defined value only.[0m
+[1;35m[WARNING]: While constructing a mapping from[0m
+[1;35m/workspace/TenantOnboardingWithNAE/tenant.yml, line 52, column 13, found a[0m
+[1;35mduplicate dict key (use_proxy). Using last defined value only.[0m
+
+PLAY [site-1] ******************************************************************
+
+TASK [Create tenants] **********************************************************
+[0;32mok: [10.106.236.54][0m
+
+TASK [ensure context for tenant exists] ****************************************
+[0;32mok: [10.106.236.54][0m
+
+TASK [Creating BD] *************************************************************
+[0;33mchanged: [10.106.236.54][0m
+
+TASK [Create a subnet] *********************************************************
+[0;33mchanged: [10.106.236.54][0m
+
+PLAY RECAP *********************************************************************
+[0;33m10.106.236.54[0m              : [0;32mok=4   [0m [0;33mchanged=2   [0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+[8mha:////4M0uNOGWCeZIRaYVL1Nfds9lW/0HGyKDh248w6GEKtcyAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCARISSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wA3f8Jkb4AAAA=[0m[Pipeline] }
+[8mha:////4OHaeHQn+hW5onZZeYuVTL+Aqciw0ayul6NK2OD0T5+YAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFQvLVDMDU4Mk3URDUyNdk2RzU90kU4MU3bQ0I0tjS0tDC0vjJAAlKmJArwAAAA==[0m
+[8mha:////4MUBrQ7N7TMVnSYsUNvUW5SoZZqXqJqRVyoA+QEo7KnxAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJBAFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wA6THqyr4AAAA=[0m[Pipeline] // ansiColor
+[8mha:////4F0M8b5pmX7Dj396ra/XGZF2bZTJCBPzwxIb09u9sWO1AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIaBBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw/Rc3k7vgAAAA==[0m[Pipeline] }
+[8mha:////4ICdxC8cio66d+1k0MBMxEpoRiDzTZ+2q33EF6Z4S78sAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSQCpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BGW9z3WoP87xLGm+AAAA[0m[Pipeline] // withCredentials
+[8mha:////4NbW8lTubpPV40dlHPLGB7zuERFj1jQSPLPEyE2YkobbAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMJpQoWoaC03vMAkxtix7ox9Ial4EV/jD1hEomKL1c4283rDOic4UrLCGxwc5s6JGEZblpgoDddAk/B0ER1hpmCEMpOi3pwWVMQGllQ1rCRsDHaBskPLsJVeP3QTNNrmzKl8Bwm16+/whEoWM+vEX5gT7G5jnwl/nr8CmGNkqPdtqbb9AODxLgO+AAAA[0m[Pipeline] }
+[8mha:////4I1Zff/ofRgk9fPDHdJD5q2FSD9RZpoKPzJXM79LYNrUAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSQCpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BGVd5zrsP+a3Fla+AAAA[0m[Pipeline] // stage
+[8mha:////4HQAnTcQpF87Vqhpvf9AVVraiE1bVnNPbKraAVVDkWNqAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUHWBBTF2jLpwgNCEkjf4vSUo6cSKuxh0IVGLCg2Vbst7zBVXwcCSvmVU4GAy9YaObdE4skR8ujhKzdGY9YSCnWKdSR1K1S+0oKlhUlLDisFbYOwoGdYQNt+IuaidQ16fo83bgUBp5gwcUPJOj8PFbZg/b6yQD4Y/zFwDzGKFsmmy7/edZvQFqanT0wgAAAA==[0m[Pipeline] stage
+[8mha:////4AoohZimNR+Oj7J/VQisw28WofbnVZcO0HmCuNDOEFD3AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0AgbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxATOXFRXCAAAA[0m[Pipeline] { (Declarative: Post Actions)
+[8mha:////4N9Ws7JFYWx0Eo/V5LA0tfUBEiAndCa0rEz/6Oq0nfUaAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QiAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LDyb6zSXCAAAA[0m[Pipeline] wrap
+[8mha:////4HJEJUi73jE03ECnbVAIAWMIbH1e+wZlnwqC15blidz+AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QgIhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0XdaX3CAAAA[0m[Pipeline] {
+[8mha:////4DZSJIaAP59RlTRL8cHlprQ9AyAGiODifuSoojMJ9YCXAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoiUBSSEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g3QSQCqwgAAAA==[0m[Pipeline] withCredentials
+Masking supported pattern matches of $webex
+[8mha:////4MV09yUF2SOQ7yt10nHOyigSKQ94OzfFxDxnfSKidoqEAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUFhbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAQB2j23CAAAA[0m[Pipeline] {
+[8mha:////4HheqHi+1DY708j0bh7/lUV73TctA+C0FZYyzLuYRsKyAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO63n9qFNzkd4Tq+AAAA[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [webex]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ curl --location --request POST https://webexapis.com/v1/messages --header 'Authorization: Bearer ****' --header 'Content-Type: application/json' --data-raw '{
+  "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vYWRhOWQ0ODAtZTYwNy0xMWViLTk3YWYtOTkwNTEzNzMzMjBl",
+  
+  "markdown": "Started at: 2021-07-28 13:50:08 UTC\nAuthor:Saurabh(saukotha@cisco.com)\nBuild ID: 20\nBuild_URL: http://192.168.192.250:8080/job/TenantOnboardingWithNAE/\nResult: SUCCESS" 
+}'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0100   287    0     0  100   287      0     95  0:00:03  0:00:03 --:--:--    95100  1210    0   923  100   287    241     75  0:00:03  0:00:03 --:--:--   317
+{"id":"Y2lzY29zcGFyazovL3VzL01FU1NBR0UvNzJmZGU0ZTAtZWZhYi0xMWViLWJlYTMtMjM3Yjc4NDdmMWQy","roomId":"Y2lzY29zcGFyazovL3VzL1JPT00vYWRhOWQ0ODAtZTYwNy0xMWViLTk3YWYtOTkwNTEzNzMzMjBl","roomType":"direct","text":"Started at: 2021-07-28 13:50:08 UTC Author:Saurabh(saukotha@cisco.com) Build ID: 20 Build_URL: http://192.168.192.250:8080/job/TenantOnboardingWithNAE/ Result: SUCCESS","personId":"Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mMDMwYTBlNi0zNjBhLTQ3ZmQtODkzYS1iZmY5MTRkNzViMjE","personEmail":"httpnotify1@webex.bot","markdown":"Started at: 2021-07-28 13:50:08 UTC\nAuthor:Saurabh(saukotha@cisco.com)\nBuild ID: 20\nBuild_URL: http://192.168.192.250:8080/job/TenantOnboardingWithNAE/\nResult: SUCCESS","html":"<p>Started at: 2021-07-28 13:50:08 UTC<br>Author:Saurabh(saukotha@cisco.com)<br>Build ID: 20<br>Build_URL: http://192.168.192.250:8080/job/TenantOnboardingWithNAE/<br>Result: SUCCESS</p>","created":"2021-07-28T13:55:21.262Z"}
+[8mha:////4JDvRG9zuZbcG2wOJxEtPy2laWtbe9BVOWxSGS1v5KhfAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihESDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDud5/avgHITZ9tvgAAAA==[0m[Pipeline] }
+[8mha:////4Jzt8oRvtTbbH6+S1hoeVZdFwbW0soMkWvTga1V41GYkAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCgWgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbN+ZNnQe+AAAA[0m[Pipeline] // withCredentials
+[8mha:////4KrGOyR3Jg90pmH4vPbbzifsS8rFF4KBM05P2pSYZ65bAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSBQkhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AEkdTCevgAAAA==[0m[Pipeline] }
+[8mha:////4DMLwjMfxhRW/KJoEWJMlgTcaFKXSfJbHa5w02bR6vmGAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKpiJAQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AEcN6NvvgAAAA==[0m[Pipeline] // wrap
+[8mha:////4A6jwDyYU0dJ0E8Jvbc5qypZJgrn3iKsXTWayd6E61OZAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSQQpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOWhzrWvPyj5QDS+AAAA[0m[Pipeline] }
+[8mha:////4AXASV6RkwkrCCWPEGhkuLpSnOdrh47S3zMXZTh1ijq+AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKpiJAQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrQ659/QFrexGyvgAAAA==[0m[Pipeline] // stage
+[8mha:////4MA0CzQT/yRGdZ7Ccx04rhDIZ3fcDO5WeC3eA6AnJSh8AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiNEgIUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5P+Sq6w9p+EWDvgAAAA==[0m[Pipeline] }
+[8mha:////4A+OmLMnBVzeEdA0vn7oJyGSBnb4RfZ4WOOHdN0OTfOpAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOISKgpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOWhzrWvP4OSOnW+AAAA[0m[Pipeline] // withEnv
+[8mha:////4KhiT+PxzQAQn3QHfZ/N3DCEuke8L/5/M5frwVeW7Hn5AAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIREhIFoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN9vBdnuAyjhfDm9AAAA[0m[Pipeline] }
+[8mha:////4H1mjMVCJbUsVRV+toMi/6j6lB0t29sNIL2/rISw9tBsAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRoKBAVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5PutINt9AFsOuOC9AAAA[0m[Pipeline] // node
+[8mha:////4FQ2N37PAWnZFgNkoci2M+MP2n4EFQ6VARX6NPrpD0nrAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRoKBAVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5PudINt+AH0X36q9AAAA[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

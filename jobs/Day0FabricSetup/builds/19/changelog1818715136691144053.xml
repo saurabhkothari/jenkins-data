@@ -1,0 +1,10 @@
+commit f6c0e0f12b9306516d0847dc6e8d17aeecadac0a
+tree fdab187c5a2232d472e543ece11c34ff5a1a1900
+parent 5a04b6753cc4e5642cae9a26354d6de65a910bb5
+author saurabhkothari <saukotha@cisco.com> 2021-07-21 21:11:56 +0530
+committer saurabhkothari <saukotha@cisco.com> 2021-07-21 21:11:56 +0530
+
+    update
+
+
+:100644 100644 243f0fcceb3e4ff9f30e1dd22e86c21d2a6f5c41 4323678d91b7cb0936a799d11ddbae15de1dfe89 M	fabric.yml

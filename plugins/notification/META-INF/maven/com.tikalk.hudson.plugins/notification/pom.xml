@@ -1,0 +1,164 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.jenkins-ci.plugins</groupId>
+		<artifactId>plugin</artifactId>
+		<version>4.14</version>
+		<relativePath />
+	</parent>
+
+    <groupId>com.tikalk.hudson.plugins</groupId>
+    <artifactId>notification</artifactId>
+    <version>1.14</version>
+    <packaging>hpi</packaging>
+    <name>Jenkins Notification plugin</name>
+    <description>Sends notifications about jobs phases and status</description>
+    <url>https://wiki.jenkins-ci.org/display/JENKINS/Notification+Plugin</url>
+
+	<properties>
+		<jenkins.version>2.235.1</jenkins.version>
+		<java.level>8</java.level>
+		<findbugs.failOnError>false</findbugs.failOnError>
+	</properties>
+
+    <repositories>
+        <repository>
+            <id>repo.jenkins-ci.org</id>
+            <url>https://repo.jenkins-ci.org/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>repo.jenkins-ci.org</id>
+            <url>https://repo.jenkins-ci.org/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>io.jenkins.tools.bom</groupId>
+				<artifactId>bom-2.235.x</artifactId>
+				<version>19</version>
+				<scope>import</scope>
+				<type>pom</type>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+    <dependencies>
+        <!-- http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.google.code.gson%22%20AND%20a%3A%22gson%22 -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.2.4</version>
+        </dependency>
+        <!-- http://jcenter.bintray.com/org/jenkins-ci/plugins/s3/ -->
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>s3</artifactId>
+            <version>0.11.5</version>
+            <optional>true</optional>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.httpcomponents</groupId>
+                    <artifactId>httpclient</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.httpcomponents</groupId>
+                    <artifactId>httpcore</artifactId>
+                </exclusion>
+				<exclusion>
+					<groupId>org.apache.commons</groupId>
+					<artifactId>commons-lang3</artifactId>
+				</exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>token-macro</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>junit</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.ezmorph</groupId>
+            <artifactId>ezmorph</artifactId>
+            <version>1.0.6</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>credentials</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>plain-credentials</artifactId>
+        </dependency>
+    </dependencies>
+
+    <developers>
+        <developer>
+            <id>markb</id>
+            <name>Mark Berner</name>
+            <email>markb@tikalk.com</email>
+            <organization>Tikal Knowledge</organization>
+            <organizationUrl>http://tikalk.com</organizationUrl>
+        </developer>
+        <developer>
+            <id>hagzag</id>
+            <name>Haggai Philip Zagury</name>
+            <email>hagzag@tikalk.com</email>
+            <organization>Tikal Knowledge</organization>
+            <organizationUrl>http://tikalk.com</organizationUrl>
+        </developer>
+        <developer>
+            <id>evgenyg</id>
+            <name>Evgeny Goldin</name>
+            <email>evgenyg@gmail.com</email>
+            <organization>AKQA</organization>
+            <organizationUrl>http://akqa.com</organizationUrl>
+        </developer>
+        <developer>
+            <id>cohencil</id>
+            <name>Chen Cohen</name>
+            <email>chenc@tikalk.com</email>
+            <organizationUrl>http://tikalk.com</organizationUrl>
+        </developer>
+    </developers>
+
+	<scm>
+        <connection>scm:git:git://github.com/jenkinsci/notification-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:jenkinsci/notification-plugin.git</developerConnection>
+        <url>https://github.com/jenkinsci/notification-plugin</url>
+        <tag>notification-1.14</tag>
+    </scm>
+
+	<licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+</project>
+

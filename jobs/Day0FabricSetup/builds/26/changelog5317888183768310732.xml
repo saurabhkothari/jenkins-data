@@ -1,0 +1,20 @@
+commit e3c8e4c8628dbe5c0a28d7825504529bbfa58d24
+tree 7590fea246f5931c54ae11ff7bf5abe31ce13e6d
+parent 4637a0810967678501fbf172811d3df20b7c612d
+author saurabhkothari <saukotha@cisco.com> 2021-07-22 10:53:28 +0530
+committer saurabhkothari <saukotha@cisco.com> 2021-07-22 10:53:28 +0530
+
+    update
+
+
+:100644 100644 8fd1fbf06aa3dc3b2430b653f446422d8b00da43 a68571b6d92602d14867b9c91de327934316acff M	vars.yml
+commit 4637a0810967678501fbf172811d3df20b7c612d
+tree 9700d2bf4f1657787ff2428fd57f5adb430dac04
+parent 3623fbdd304fd87c93c04ba4f3bf0b2638225963
+author saurabhkothari <saukotha@cisco.com> 2021-07-22 10:52:47 +0530
+committer saurabhkothari <saukotha@cisco.com> 2021-07-22 10:52:47 +0530
+
+    corrected api payload
+
+
+:100644 100644 ff064cdf6d07791c6ef9ac9061a4591140b28bf6 f415fede6276eef452f4e879dabb72414fc1a3e3 M	fabric.yml
